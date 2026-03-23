@@ -3,17 +3,15 @@
 
 #include <iostream>
 using namespace std;
-#include "Tasks.h"
-#include "Examples.h"
+
 #include <string>
 
 
-/// @brief 
-/// @return 
+
 
 void task1()
 {
-    //побітово виконати операцію ((17*a+312*c)/32)-(b*120)+(d*127)
+
     int a, c, b, d;
     int x;
 
@@ -33,7 +31,7 @@ void task2()
     string text;
     cout << "input text: ";
     getline(cin >> ws, text);
-    // Шифрування: проходимо по кожному символу
+   
     for (int i = 0; i < text.length(); ++i) {
         unsigned char c = (unsigned char)text[i];
         text[i] = (c << 4) | (c >> 4);
