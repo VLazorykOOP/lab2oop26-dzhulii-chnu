@@ -26,7 +26,7 @@ void task1()
     x = (((a + (a << 4)) + (c << 8) + (c << 5) + (c << 4) + (c << 3)) >> 5) - ((b << 7) - (b << 3)) + ((d << 7) - d);
     cout << "output x: " << x << endl;
 }
-void task2()
+void task4()
 {
     string text;
     cout << "input text: ";
@@ -48,7 +48,7 @@ int main()
         cout << endl;
         cout << "MENU" << endl;
         cout << "1 - Task 1" << endl;
-        cout << "2 - Task 2" << endl;
+        cout << "2 - Task 4" << endl;
         cout << "0 - Exit" << endl;
         cout << "Choose: ";
         cin >> choice;
@@ -56,7 +56,7 @@ int main()
         switch (choice)
         {
         case 1: task1(); break;
-        case 2: task2(); break;
+        case 2: task4(); break;
         case 0: cout << "Exit program" << endl; break;
         default: cout << "Wrong choice" << endl;
         }
